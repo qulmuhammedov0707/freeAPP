@@ -49,8 +49,8 @@ body {
     height: 600px;
     background-color: #ffffff33;
     text-align: center;
-    transform: translateX(650px);
-    margin-top: 150px;
+    transform: translateX(550px);
+    margin-top: 120px;
     border-radius: 15px;
     padding-top: 30px;
   }
