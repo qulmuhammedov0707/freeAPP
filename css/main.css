@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+  
+  .moon {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px rgba(17, 16, 22, 0.76) inset, 0 0 20px 2px;
+  }
+  
+  .moon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-color: #df15a5;
+    border-radius: 50%;
+    box-shadow: -40px -40px 50px 2px #000 inset;
+  }
+  
+  .moon > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 40s linear alternate infinite;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ca15be5-bdef-4bda-8172-2eac787b4d57/df3w9u3-8d7ac0f7-4b06-4151-a01c-90b9ac41ad39.png/v1/fill/w_1264,h_632,q_70,strp/neptune_texture_map___custom_by_adamirman2810_df3w9u3-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvOWNhMTViZTUtYmRlZi00YmRhLTgxNzItMmVhYzc4N2I0ZDU3XC9kZjN3OXUzLThkN2FjMGY3LTRiMDYtNDE1MS1hMDFjLTkwYjlhYzQxYWQzOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.E5P1JjydNLUi89sbdW8uu_gG-GL0AWFvFRtiJQr7RxQ);
+  }
+  
+  @keyframes spin {
+    to {
+      transform: translate(-50%);
+    }
+  }
+  .about{
+    width: 400px;
+    height: 600px;
+    background-color: #ffffff33;
+    text-align: center;
+    transform: translateX(650px);
+    margin-top: 150px;
+    border-radius: 15px;
+    padding-top: 30px;
+  }
+  .about__h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400px;
+  }
+  .about__h3{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    margin-left: 50px;
+  }
+  .about__ul--li{
+    list-style-type: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-left: -50px;
+  }
+  .go__button{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: white;
+    color: skyblue;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid skyblue;
+  }

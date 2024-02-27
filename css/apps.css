@@ -1,0 +1,141 @@
+
+.header{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+.header__h1{
+    color: white;
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.header__ul{
+    display: flex;
+    margin-left: 765px;
+}
+.header__ul--a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.header__ul--a-li{
+    color: white;
+    margin-left: 100px;
+}
+.app-card{
+  width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  border: 2px solid blue;
+}
+.appImage{
+  width: 250px;
+  height: 300px;
+  margin-left: 75px;
+  margin-top: 75px;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+.cards2{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 100px;
+
+}
+.cards3{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 100px;
+}
+.appName{
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.appDescr{
+  margin-left: 50px;
+  text-align: center;
+  color: white;
+  width: 300px;
+ font-family: 'Poppins', sans-serif;
+}
+.appDownload{
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+ html, body {
+    margin: 0;
+    padding:0;
+    width:100vw;
+    background-size:cover;
+    background-repeat:no-repeat;
+    perspective:2000px;
+    background-color:black;
+  }
+  .planetContainer {
+    transform-style:preserve-3d;
+    z-index:5;
+  }
+  #ufo, #comet, #star, .tree, .mountain, #forest, .planetContainer, .moon, .ring, .inner, .planet, .planetoid {
+    position:absolute;
+  }
+  .planet, .moon, .planetoid {
+    background-color:black;
+  }
+  
+  .ring {
+    border-radius:50%;
+  }
+  #nebulaBackdrop, #forest {
+    width:100vw;
+    height:100vh;
+  }
+  #forest {
+    bottom:0;
+    z-index:10;
+    background-size:cover;
+    height:100px;
+    background: linear-gradient(transparent 0%, black 100%);
+  }
+  
+  .tree, .mountain {
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  #comet {
+    z-index:-1;
+    border-radius:0 50% 50% 0 / 0 40% 40% 0;
+    filter: drop-shadow(1px 1px 1px blue);
+    /*plus a border/borderRight via code*/
+   } 
+  
+   #star {  
+     z-index:-1;
+    left:50%;
+    top:50%;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:black;
+    box-shadow: 0px 0px 80px 20px hsla(1,0%,100%,.8), 0 0 20px 5px #F3F3E8; 
+  }
+  @keyframes sway {
+   
+     to{
+      transform:skewX(0deg);
+    }  }
